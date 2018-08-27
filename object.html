@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript 对象的使用</title>
+<script type="text/javascript">
+ window.status="欢迎";
+ var today = new Date();
+ hour = today.getHours();
+ minute=today.getMinutes();
+ second = today.getSeconds();
+ document.write("<h3>"+"现在是"+hour+"点"+minute+"分"+second+"秒"+"</h3>");
+ if(hour<12)
+ {
+  document.write("早上好!")
+ }else if(hour>12&&hour<14)
+ {
+  document.write("中午好!")
+ }else if(hour>14&&hour<18)
+ {
+  document.write("下午好!")
+ }else{
+ document.write("晚上好!")
+ }
+ 
+ function openWindow()
+ {
+  window.open("http://www.w3school.com.cn/tags/tag_frameset.asp", "window", width="300px",height="200px",status="no,menubar=no");
+ }
+</script>
+</head>
+<body align="center" onload="openWindow()">
+<input type="button" value="关闭窗口" onclick="window.close()">
+<br>
+<div>
+<input type="button" value="后退" onclick="history.back()">
+<input type="button" value="打开【天下第九】" onclick="location='http://www.biquge.com.tw/16_16635/'">
+<input type="button" value="前进" onclick="history.forward()">
+
+</div>
+</body>
+</html>

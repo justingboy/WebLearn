@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单的使用</title>
+</head>
+<body marginheight="100">
+<center>
+<form name="register" method="post" action="index.asp">
+用户名:&nbsp<input type="text" maxlength ="10"  size ="10"></input><br>
+密码&nbsp&nbsp&nbsp:&nbsp<input type="password" maxlength ="10"  size ="10"></input><br>
+性别&nbsp&nbsp&nbsp:&nbsp<input type="radio" name="sex" value="male" checked>男</input><input type="radio" name="sex"  value="woman">女</input><br>
+<input type="checkbox" name="basketball" value="true" checked>我喜欢打篮球</input><br>
+<input type="checkbox" name="football">我喜欢踢足球</input><br>
+头像：<input type="file" name="photo"></input><br>
+擅长的语言:<br>
+<select name="selec_name" size="3" mutiple>
+<option value ="1"> Android
+<option value ="2"> Java
+<option value ="3"> Python
+</select><br>
+特长：<br>
+<textarea name="intro" rows="4" cols="30">喜欢学习，看电影~</textarea>
+<br><br>
+<input type="submit" name="submit" value="提交">
+<input type="reset" name="reset" value="清除">
+<input type="button" value="普通按钮" onclick ="alert('你好')">
+</form>
+</center>
+</body>
+</html>
